@@ -1,0 +1,157 @@
+html,
+body {
+    margin:0;
+    background-color: #202020;
+    color:white;
+    @font-face {
+        font-family: 'Rounded';
+        src: url('fonts/Typo_Round.otf');
+    }
+}
+
+div{
+
+    color:wheat;
+
+}
+
+.bg{
+    background:url(images/bg.jpg);
+    background-size: cover;
+}
+
+.banner {
+    background: #009579;
+    height: 100px;
+}
+
+.banner_content {
+    padding: 70px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.banner_text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: 'Rounded';
+    color: white;
+    font: 500 100%/1.5 system-ui;
+
+}
+
+.banner_selected {
+    color: inherit;
+  text-decoration: inherit;
+  margin-right: 60px;
+  margin-left: 0px;
+  max-height: 200%;
+    background-color: #202020;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    padding-bottom: 100px;
+    border-radius: 20px;
+}
+
+.mainTitle {
+    
+    color: white;
+
+  margin-right: 100px;
+  margin-left: 0px;
+  font-size: 100px;
+  transform: translateY(-80px);
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.menuItem {
+    color: inherit;
+  text-decoration: inherit;
+  margin-right: 60px;
+  margin-left: 0px;
+}
+
+.menuItem:hover {
+    color:yellow;
+}
+
+p.gameName {
+    color:white;
+    font-weight: bold;
+    font-size:30px;
+}
+
+.gameText {
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+
+
+  font: 500 100%/1.5 system-ui;
+}
+
+p.gameDescription {
+    color:wheat;
+}
+
+img.gameImg {
+
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+img.projectImg {
+    max-width: 80%;
+    border-radius: 30px;
+}
+
+.gameItem {
+    display:grid;
+    padding: 2rem;
+    grid-template-columns: 400px 1fr;
+    gap: 1rem;
+    align-items: center;
+
+
+    font: 500 100%/1.5 system-ui;
+
+}
+
+.gameLink {
+    color:white;
+    text-decoration: inherit;
+}
+
+  hr.rounded {
+    border-top: 4px solid #bbb;
+    border-radius: 5px;
+    max-width: 30%;
+  }
+
+  .footer {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: 'Rounded';
+    color: white;
+    font: 500 100%/1.5 system-ui;
+    text-align: center;
+    transform: translateY(40px);
+  }
+
+  .normalText {
+      padding: 20px 50px;
+      display: block;
+      font: 500 100%/1.5 system-ui;
+      text-align: center;
+  }
+
+  .sectionTitle {
+    padding: 0px 50px;
+    font: 500 300%/1.5 system-ui;
+  }
+
+  

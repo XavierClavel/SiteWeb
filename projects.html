@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <header>
+    <div class="banner">
+      <div class="banner_content">
+        <a class="mainTitle">Xavier Clavel</a>
+        <nav class="banner_text">
+          <a class="menuItem" href="index.html">Accueil </a>
+          <a class="banner_selected">Projets</a>
+          <a class="menuItem" href="games.html">Jeux vidéos </a>
+          <br />
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <article class="gameItem">
+      <a href="https://github.com/XavierClavel/ProjetBluetooth" target="_blank">
+        <img class="projectImg" src="images/androidStudio.png" />
+      </a>
+      <div class="gameText">
+        <p class="gameName">Apk pour communiquer par bluetooth</p>
+        <p class="gameDescription">
+          Projet réalisé en java avec Android Studio dans le cadre de ma
+          formation à l'ENSEEIHT, en 2022. L'objectif était de réliser une apk
+          permettant la transmission de données via bluetooth entre un appareil
+          client et un appareil serveur. Le serveur affiche la liste des
+          applications installées, ainsi que leur identifiant (UID) et leur
+          consommation en énergie (RSS), et envoie ces données au client. Le
+          client dispose de boutons permettant d'activer un monitoring sur une
+          application, auquel cas l'appareil envoît de manière périodique des
+          requêtes, auxquelles le serveur va répondre pour mettre à jour la
+          valeur du RSS sur les deux appareils.
+        </p>
+        <a
+          href="https://github.com/XavierClavel/ProjetBluetooth"
+          class="gameLink"
+          target="_blank"
+          >Github</a
+        ><br />
+      </div>
+    </article>
+    <hr class="rounded" />
+
+    <article class="gameItem">
+      <a href="images/pdp.jpg">
+        <img class="projectImg" src="images/html.png" />
+      </a>
+      <div class="gameText">
+        <p class="gameName">Création d'un site web</p>
+        <p class="gameDescription">
+          En 2022, j'ai décidé d'apprendre à créer des sites web en HTML/CSS sur
+          mon temps libre, et dans ce but j'ai entrepris de créer mon propre
+          site web pour faire office de portfolio. Le résultat est ce site web.
+        </p>
+        <a
+          href="https://github.com/XavierClavel/ProjetBluetooth"
+          class="gameLink"
+          >Github</a
+        ><br />
+      </div>
+    </article>
+  </body>
+
+  <footer>
+    <div class="banner">
+      <p class="footer">Xavier Clavel, 2022</p>
+    </div>
+  </footer>
+</html>
