@@ -1,7 +1,6 @@
 var mini = true;
 
 function toggleSidebar() {
-    console.log("function called");
     console.log("opening sidebar");
     document.getElementById("sidebar").style.width = "250px";
     document.getElementById("main").style.marginRight = "250px";
