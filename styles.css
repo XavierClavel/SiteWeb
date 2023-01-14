@@ -1,34 +1,38 @@
 html,
 body {
-    margin:0;
+    margin: 0;
     background-color: #202020;
-    color:white;
+    color: white;
+
     @font-face {
         font-family: 'Rounded';
         src: url('fonts/Typo_Round.otf');
     }
 }
 
-div{
+div {
 
-    color:wheat;
+    color: wheat;
 
 }
 
-.bg{
-    background:url(images/bg.jpg);
+.bg {
+    background: url(images/bg.jpg);
     background-size: cover;
 }
 
 .banner {
     background: #009579;
     height: 100px;
+    position: relative;
+    z-index: 999;
 }
 
 .banner_content {
     padding: 70px;
     margin: 0 auto;
     display: flex;
+    z-index: 999;
 }
 
 .banner_text {
@@ -42,10 +46,10 @@ div{
 
 .banner_selected {
     color: inherit;
-  text-decoration: inherit;
-  margin-right: 60px;
-  margin-left: 0px;
-  max-height: 200%;
+    text-decoration: inherit;
+    margin-right: 60px;
+    margin-left: 0px;
+    max-height: 200%;
     background-color: #202020;
     color: white;
     font-size: 16px;
@@ -54,52 +58,59 @@ div{
     border-radius: 20px;
 }
 
+.banner-img {
+    width: 100%;
+    max-width: 50px;
+    height: 100%;
+    translate: 80px -45px;
+    margin-right: 50px;
+}
+
 .mainTitle {
-    
+
     color: white;
 
-  margin-right: 100px;
-  margin-left: 0px;
+    margin-right: 100px;
+    margin-left: 0px;
 
-  font-size: 5vw;
-  font-size: 100px;
-  transform: translateY(-80px);
+    font-size: 5vw;
+    font-size: 100px;
+    transform: translateY(-80px);
 
-  vertical-align: auto;
+    vertical-align: auto;
 
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .menuItem {
     color: inherit;
-  text-decoration: inherit;
-  margin-right: 60px;
-  margin-left: 0px;
+    text-decoration: inherit;
+    margin-right: 60px;
+    margin-left: 0px;
 }
 
 .menuItem:hover {
-    color:yellow;
+    color: yellow;
 }
 
 p.gameName {
-    color:white;
+    color: white;
     font-weight: bold;
-    font-size:30px;
+    font-size: 30px;
 }
 
 .gameText {
-  padding: 2rem;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  align-items: center;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
 
 
-  font: 500 100%/1.5 system-ui;
+    font: 500 100%/1.5 system-ui;
 }
 
 p.gameDescription {
-    color:wheat;
+    color: wheat;
 }
 
 img.gameImg {
@@ -108,13 +119,102 @@ img.gameImg {
     border-radius: 30px;
 }
 
+.nav-img {
+    width: 100%;
+    max-width: 50px;
+    margin-top: 100px;
+    margin-left: 20px;
+    translate: 0 100px;
+}
+
+.icon-container {
+    background-color: #202020;
+    color: #fff;
+    border: solid 3px;
+    border-radius: 60px;
+    margin: 20px;
+    max-width: 200px;
+    width: auto;
+    max-height: 70px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.icon-container:hover {
+    background-color: #009579;
+    color: #009579;
+}
+
+.icon {
+    width: 100%;
+    margin-left: 20px;
+    max-width: 50px;
+    float: left;
+    color: #ff0000;
+}
+
+
+.icon-text {
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    font: 500 100%/1.5 system-ui;
+}
+
+
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 15px;
+}
+
+.content {
+    margin-left: 15px;
+    display: block;
+    height: 202px;
+    position: relative;
+}
+
+.inner {
+    position: absolute;
+    align-self: flex-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+
+.itemTitle {
+    font: 500 120%/1.5 system-ui;
+    color: wheat;
+}
+
+.itemDate {
+    font: 500 110%/1.5 system-ui;
+    color: #aaa;
+}
+
+.itemText {
+    font: 500 100%/1.5 system-ui;
+    color: #fff;
+}
+
 img.projectImg {
     max-width: 80%;
     border-radius: 30px;
 }
 
+.item {
+    float: left;
+
+}
+
 .gameItem {
-    display:grid;
+    display: grid;
     padding: 2rem;
     grid-template-columns: 400px 1fr;
     gap: 1rem;
@@ -125,18 +225,20 @@ img.projectImg {
 
 }
 
+
+
 .gameLink {
-    color:white;
+    color: white;
     text-decoration: inherit;
 }
 
-  hr.rounded {
+hr.rounded {
     border-top: 4px solid #bbb;
     border-radius: 5px;
     max-width: 30%;
-  }
+}
 
-  .footer {
+.footer {
     flex-grow: 1;
     line-height: 1.4;
     font-family: 'Rounded';
@@ -144,18 +246,68 @@ img.projectImg {
     font: 500 100%/1.5 system-ui;
     text-align: center;
     transform: translateY(40px);
-  }
+}
 
-  .normalText {
-      padding: 20px 50px;
-      display: block;
-      font: 500 100%/1.5 system-ui;
-      text-align: center;
-  }
+.normalText {
+    padding: 20px 50px;
+    display: block;
+    font: 500 100%/1.5 system-ui;
+    text-align: left;
+    color: #fff;
+}
 
-  .sectionTitle {
+.sectionTitle {
     padding: 0px 50px;
     font: 500 300%/1.5 system-ui;
-  }
+    clear: both;
+}
 
-  
+/* Container */
+
+.container {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: calc(100% - 4.5em);
+    width: 45em;
+}
+
+.container.xsmall {
+    width: 11.25em;
+}
+
+.container.small {
+    width: 22.5em;
+}
+
+.container.medium {
+    width: 33.75em;
+}
+
+.container.large {
+    width: 56.25em;
+}
+
+.container.xlarge {
+    width: 67.5em;
+}
+
+.container.max {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        max-width: calc(100% - 3.375em);
+    }
+
+}

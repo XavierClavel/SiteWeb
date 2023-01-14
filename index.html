@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
+    <title>Xavier Clavel</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/web-logo.png">
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
   <header>
@@ -15,48 +17,201 @@
         <nav class="banner_text">
           <a class="banner_selected">Accueil </a>
           <a class="menuItem" href="projects.html">Projets</a>
-          <a class="menuItem" href="games.html">Jeux vidéos </a>
           <br />
         </nav>
+        <a href="https://github.com/XavierClavel" target="_blank" style="height: 100%;">
+          <img src="images/banner-github.png" class="banner-img">
+        </a>
+        <a href="https://www.linkedin.com/in/xavier-clavel/" target="_blank" style="height: 100%;">
+          <img src="images/banner-linkedin.png" class="banner-img">
+        </a>
       </div>
     </div>
   </header>
 
-  <body>
-    <h1 class="sectionTitle">A propos</h1>
-    <article class="gameItem">
-      <a href="images/pdp.jpg">
-        <img class="gameImg" src="images/pdp.jpg" />
+  
+
+  <div class="wrapper" style="width: 100%; position: relative;">
+    <div id="sidebar" style="background-color: #000;height: 100%; width: 100px; top:0; right:0;color: #000; border:solid 3px; position: fixed;" 
+    onmouseover="toggleSidebar()"
+    onmouseleave="exitSidebar()">
+        <a href="#about">
+          <img src="images/nav-id.png" class="nav-img">
+        </a>
+        <br>
+
+        <a href="#skills">
+          <img src="images/nav-skill.png" class="nav-img">
+        </a>
+        <br>
+
+        <a href="#professional">
+          <img src="images/nav-professional.png" class="nav-img">
+        </a>
+        <br>
+
+        <a href="#studies">
+        <img src="images/nav-school.png" class="nav-img">
       </a>
-      <div class="gameText">
-        <p class="gameDescription">
+    </div>
+    <div id="main" style="overflow: hidden; color: #fff; margin-right: 100px;">
+      
+
+  
+      
+  
+    
+    
+  <br>
+  
+
+  <body>
+    <script>console.log("coucou")</script>
+    <h1 id="about" class="sectionTitle">A propos</h1>
+      <div class="normalText">
           Je suis un étudiant en deuxième année d'école d'ingénieur à l'ENSEEIHT
           (Toulouse). Passionné par l'ingénierie du logiciel depuis des années.
-        </p>
-      </div>
+        </div>
     </article>
 
-    <h1 class="sectionTitle">Compétences</h1>
-    <ul class="normalText">
-      <li>C#</li>
-      <li>Java</li>
-      <li>HTML/CSS</li>
-      <li>Matlab</li>
-    </ul>
+    <h1 id="skills" class="sectionTitle">Compétences</h1>
 
-    <h1 class="sectionTitle">Parcours</h1>
-    <ul class="normalText">
-      <li>
-        Ecole d'Ingénieur spécialité Systèmes Embarqués à l'ENSEEIHT (2020-2023)
-      </li>
-      <li>
-        Certificat Big Data & Sciences des Données - Toulouse Tech (2021-2022)
-      </li>
-      <li>Classe préparatoire PCSI-PC à Fénélon Sainte-Marie (2018-2020)</li>
-    </ul>
-    <br />
-    <br />
-  </body>
+    <div class="icon-container">
+      <img class="icon" src="images/icon-java.png" >
+      <div class="icon-text">Java</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-html.png" >
+      <div class="icon-text">HTML</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-c-sharp.png" >
+      <div class="icon-text">.NET</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-css.png" >
+      <div class="icon-text">CSS</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-matlab.png" >
+      <div class="icon-text">Matlab</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-c.png" >
+      <div class="icon-text">C</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-unity.png" >
+      <div class="icon-text">Unity</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-android-studio.png" >
+      <div class="icon-text">Android Studio</div>
+    </div>
+
+    <div class="icon-container">
+      <img class="icon" src="images/icon-git.png" >
+      <div class="icon-text">Git</div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1 id="professional" class="sectionTitle">Expérience professionnelle</h1>
+    <br><br><br>
+      
+      <div class="container">
+          <img class="logo" src="images/logo-capgemini.png" />
+          <div class="content" >
+            <div class="inner">
+
+            <h4 class="itemTitle"> Développeur Java</h4>
+            <strong class="itemDate">2023</strong>
+            <p class="itemText">
+              Stage de fin d'étude en développement de systèmes logiciels chez Capgemini
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img class="logo" src="images/logo-tdf.png" />
+        <div class="content" >
+          <div class="inner">
+
+          <h4 class="itemTitle"> Assistant spécialisé</h4>
+          <strong class="itemDate">2021</strong>
+          <p class="itemText">
+            Accompagnement des équipes d'exploitation réseau
+          </p>
+
+        </div>
+      </div>
+    </div>
+    
+
+      <br><br><br><br><br><br><br><br>
+
+
+    <h1 id="studies" class="sectionTitle">Formation</h1>
+      
+      <div class="container">
+          <img class="logo" src="images/logo-n7.png" />
+          <div class="content" >
+            <div class="inner">
+
+            <h4 class="itemTitle"> Diplôme d'ingénieur informatique et télécommunications</h4>
+            <strong class="itemDate">2020-2023</strong>
+            <p class="itemText">
+              Cursus Sciences du Numérique à l'ENSEEIHT (Toulouse), spécialité Systèmes Embarqués
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img class="logo" src="images/logo-t-tech.png" />
+        <div class="content" >
+          <div class="inner">
+
+          <h4 class="itemTitle">Formation Sciences des données & Big Data</h4>
+          <strong class="itemDate">2021-2022</strong>
+          <p class="itemText">
+            Cursus supplémentaire dispensé par Toulouse Tech
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+      <div class="container">
+        <img class="logo" src="images/logo-fsm.jpg" />
+        <div class="content" >
+          <div class="inner">
+
+          <h4 class="itemTitle">Classe préparatoire</h4>
+          <strong class="itemDate">2018-2020</strong>
+          <p class="itemText">
+            Filière Physique-Chimie à Fénelon Sainte-Marie (Paris 8e)
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  </div>
 
   <footer>
     <div class="banner">
