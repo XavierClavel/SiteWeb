@@ -24,19 +24,20 @@ div {
 .banner {
     background: #009579;
     height: 100px;
+    width: 100%;
     position: relative;
     z-index: 999;
 }
 
 .banner_content {
-    display: flex;
     z-index: 999;
     pointer-events: none;
 }
 
 .banner_text {
+    position: absolute;
     padding-top: 70px;
-    flex-grow: 1;
+    flex-grow: 0;
     line-height: 1.4;
     font-family: 'Rounded';
     color: white;
@@ -51,8 +52,7 @@ div {
     margin-right: 60px;
     margin-left: 0px;
     max-height: 200%;
-    background-color: #202020;
-    color: white;
+    color: #202020;
     font-size: 16px;
     padding: 16px 32px;
     padding-bottom: 100px;
@@ -63,9 +63,21 @@ div {
     width: 100%;
     max-width: 50px;
     height: 100%;
-    translate: 0px 25px;
-    margin-right: 50px;
     pointer-events: all;
+    margin-right: 40px;
+    margin-top: 24px;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+
+.banner-navbar {
+    background: #009579;
+    height: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .mainTitle {
@@ -73,14 +85,12 @@ div {
     color: white;
     white-space: nowrap;
 
-    margin-right: 100px;
-    margin-left: 0px;
+    float: left;
 
     font-size: 5vw;
     font-size: 100px;
     translate: 15px -8px;
 
-    vertical-align: auto;
     pointer-events: none;
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -161,9 +171,18 @@ img.gameImg {
     float: left;
 }
 
+
+
 .icon-container:hover {
     background-color: #009579;
     color: #009579;
+}
+
+.icon-container:hover .icon-text {
+    color: #202020;
+    translate: -30px 0;
+    text-align: center;
+
 }
 
 .icon {
@@ -171,7 +190,6 @@ img.gameImg {
     margin-left: 20px;
     max-width: 50px;
     float: left;
-    color: #ff0000;
 }
 
 
@@ -192,59 +210,38 @@ img.gameImg {
     margin-right: 15px;
 }
 
-.content {
-    margin-left: 15px;
-    display: block;
-    height: 202px;
-    position: relative;
-}
 
 .inner {
-    position: absolute;
     align-self: flex-end;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%, -50%);
+    width: auto;
+    color: #202020;
+    border: solid 3px;
+    vertical-align: baseline;
+}
+
+.inner.small {
+    background-color: #009579;
 }
 
 .itemTitle {
-    font: 500 120%/1.5 system-ui;
-    color: wheat;
+    margin-top: 0px;
+    font: 500 150%/1.5 system-ui;
+    color: #009579;
+    text-align: left;
 }
 
 .itemDate {
     font: 500 110%/1.5 system-ui;
     color: #aaa;
+    text-align: left;
 }
 
 .itemText {
     font: 500 100%/1.5 system-ui;
     color: #fff;
+    text-align: left;
+    margin-bottom: 0px;
 }
-
-img.projectImg {
-    max-width: 80%;
-    border-radius: 30px;
-}
-
-.item {
-    float: left;
-
-}
-
-.gameItem {
-    display: grid;
-    padding: 2rem;
-    grid-template-columns: 400px 1fr;
-    gap: 1rem;
-    align-items: center;
-
-
-    font: 500 100%/1.5 system-ui;
-
-}
-
-
 
 .gameLink {
     color: white;
@@ -281,39 +278,46 @@ hr.rounded {
     clear: both;
 }
 
+.sidebar {
+    background-color: #000;
+    height: 100%;
+    width: 85px;
+    top: 0;
+    right: 0;
+    color: #fff;
+    position: fixed;
+}
+
 /* Container */
 
 .container {
     margin: 0 auto;
+    margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     max-width: calc(100% - 4.5em);
-    width: 45em;
+    width: 60em;
+    height: auto;
+    color: #202020;
+    border: solid 3px;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.container.xsmall {
-    width: 11.25em;
+.main {
+    overflow: hidden;
+    color: #fff;
+    margin-right: 100px;
 }
 
-.container.small {
-    width: 22.5em;
+.separator {
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.container.medium {
-    width: 33.75em;
-}
-
-.container.large {
-    width: 56.25em;
-}
-
-.container.xlarge {
-    width: 67.5em;
-}
-
-.container.max {
-    width: 100%;
-}
 
 @media screen and (max-width: 1024px) {
 
@@ -323,10 +327,45 @@ hr.rounded {
 
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 650px) {
 
-    .container {
-        max-width: calc(100% - 3.375em);
+    .mainTitle {
+        font-size: 70px;
     }
 
+    .main {
+        margin-right: 0px;
+    }
+
+    .inner {
+        clear: both;
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+        width: 60%;
+        max-width: fit-content;
+        float: none;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        width: 0;
+        max-width: 0;
+    }
+
+    .banner-navbar {
+        height: 60px;
+    }
 }

@@ -11,19 +11,15 @@
   </head>
 
   <header>
+    <div class="banner-navbar"></div>
     <div class="banner">
       <div class="banner_content">
         <a class="mainTitle">Xavier Clavel</a>
-        <nav class="banner_text">
-          <a class="banner_selected">Accueil </a>
-          <a class="menuItem" href="projects.html">Projets</a>
-          <br />
-        </nav>
-        <a href="https://github.com/XavierClavel" target="_blank" style="height: 100%;">
-          <img src="images/banner-github.png" class="banner-img">
-        </a>
         <a href="https://www.linkedin.com/in/xavier-clavel/" target="_blank" style="height: 100%;">
           <img src="images/banner-linkedin.png" class="banner-img">
+        </a>
+        <a href="https://github.com/XavierClavel" target="_blank" style="height: 100%;">
+          <img src="images/banner-github.png" class="banner-img">
         </a>
       </div>
     </div>
@@ -31,8 +27,8 @@
 
   
 
-  <div class="wrapper" style="width: 100%; position: relative;">
-    <div id="sidebar" style="background-color: #000;height: 100%; width: 100px; top:0; right:0;color: #fff; position: fixed;" 
+  <div style="width: 100%; position: absolute;">
+    <div id="sidebar" class="sidebar" 
     onmouseover="toggleSidebar()"
     onmouseleave="exitSidebar()">
 
@@ -60,7 +56,7 @@
       </a>
     </div>
 
-    <div id="main" style="overflow: hidden; color: #fff; margin-right: 100px;">
+    <div id="main" class="main">
   <br>
   
 
@@ -141,16 +137,17 @@
         </div>
       </div>
 
+      <hr class="separator">
+
       <div class="container">
         <img class="logo" src="images/logo-tdf.png" />
         <div class="content" >
           <div class="inner">
-
-          <h4 class="itemTitle"> Assistant spécialisé</h4>
-          <strong class="itemDate">2021</strong>
-          <p class="itemText">
-            Accompagnement des équipes d'exploitation réseau
-          </p>
+            <h4 class="itemTitle"> Assistant spécialisé</h4>
+            <strong class="itemDate">2021</strong>
+            <p class="itemText">
+              Accompagnement des équipes d'exploitation réseau
+            </p>
 
         </div>
       </div>
@@ -167,30 +164,34 @@
           <div class="content" >
             <div class="inner">
 
-            <h4 class="itemTitle"> Diplôme d'ingénieur informatique et télécommunications</h4>
-            <strong class="itemDate">2020-2023</strong>
-            <p class="itemText">
-              Cursus Sciences du Numérique à l'ENSEEIHT (Toulouse), spécialité Systèmes Embarqués
-            </p>
+              <h4 class="itemTitle"> Diplôme d'ingénieur informatique et télécommunications</h4>
+              <strong class="itemDate">2020-2023</strong>
+              <p class="itemText">
+                Cursus Sciences du Numérique à l'ENSEEIHT (Toulouse), spécialité Systèmes Embarqués
+              </p>
 
+            </div>
           </div>
         </div>
-      </div>
+
+      <hr class="separator">
 
       <div class="container">
         <img class="logo" src="images/logo-t-tech.png" />
         <div class="content" >
           <div class="inner">
 
-          <h4 class="itemTitle">Formation Sciences des données & Big Data</h4>
-          <strong class="itemDate">2021-2022</strong>
-          <p class="itemText">
-            Cursus supplémentaire dispensé par Toulouse Tech
-          </p>
+            <h4 class="itemTitle">Formation Sciences des données & Big Data</h4>
+            <strong class="itemDate">2021-2022</strong>
+            <p class="itemText">
+              Cursus supplémentaire dispensé par Toulouse Tech
+            </p>
 
+          </div>
         </div>
       </div>
-    </div>
+
+    <hr class="separator">
 
       <div class="container">
         <img class="logo" src="images/logo-fsm.jpg" />
