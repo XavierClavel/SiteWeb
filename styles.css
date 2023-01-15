@@ -74,10 +74,11 @@ div {
 
 .banner-navbar {
     background: #009579;
-    height: 0px;
+    height: 60px;
     width: 100%;
     position: fixed;
     z-index: 999;
+    visibility: hidden;
 }
 
 .mainTitle {
@@ -169,6 +170,8 @@ img.gameImg {
     display: flex;
     align-items: center;
     float: left;
+    scale: 1px;
+    transition: height 1s;
 }
 
 
@@ -176,7 +179,9 @@ img.gameImg {
 .icon-container:hover {
     background-color: #009579;
     color: #009579;
+    height: 120px;
 }
+
 
 .icon-container:hover .icon-text {
     color: #202020;
@@ -286,6 +291,11 @@ hr.rounded {
     right: 0;
     color: #fff;
     position: fixed;
+    transition: width 0.5s;
+}
+
+.sidebar:hover {
+    width: 220px;
 }
 
 /* Container */
@@ -313,11 +323,19 @@ hr.rounded {
 }
 
 .separator {
-    width: 200px;
+    width: 300px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
+.menu {
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    max-width: 40px;
+    background-color: #009579;
+    border: #009579;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -327,10 +345,18 @@ hr.rounded {
 
 }
 
+@media only screen and (max-width: 800px) {
+    .banner-img {
+        visibility: hidden;
+    }
+}
+
+
 @media only screen and (max-width: 650px) {
 
     .mainTitle {
         font-size: 70px;
+        translate: 15px 20px;
     }
 
     .main {
@@ -363,9 +389,16 @@ hr.rounded {
     .sidebar {
         width: 0;
         max-width: 0;
+        transition: width 0.5s;
     }
 
     .banner-navbar {
-        height: 60px;
+        visibility: visible;
     }
+
+    .menu {
+        visibility: visible;
+    }
+
+
 }

@@ -1,16 +1,20 @@
-var mini = true;
+var sidebarToggled = false;
 
 function toggleSidebar() {
-    console.log("opening sidebar");
-    document.getElementById("sidebar").style.width = "250px";
-    //document.getElementById("main").style.marginRight = "250px";
+    if (sidebarToggled) {
+        console.log("opening sidebar");
+        document.getElementById("sidebar").style.width = "0px";
+        document.getElementById("sidebar").style.maxWidth = "0px";
+        document.getElementById("menuButton").src = "images/nav-menu.png"
+        sidebarToggled = false;
+    }
+    else {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("sidebar").style.maxWidth = "250px";
+        document.getElementById("menuButton").src = "images/nav-back.png"
+        sidebarToggled = true;
+    }
 
-}
-
-function exitSidebar() {
-    console.log("closing sidebar");
-    document.getElementById("sidebar").style.width = "85px";
-    //document.getElementById("main").style.marginRight = "85px";
 }
 
 function alertLog() {

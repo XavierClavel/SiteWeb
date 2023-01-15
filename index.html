@@ -11,7 +11,11 @@
   </head>
 
   <header>
-    <div class="banner-navbar"></div>
+    <div class="banner-navbar">
+      <button  class="menu" type="button" onclick="toggleSidebar()">
+      <img id="menuButton" class="icon" style="margin: 0px;" src="images/nav-menu.png" alt="">
+      </button>
+    </div>
     <div class="banner">
       <div class="banner_content">
         <a class="mainTitle">Xavier Clavel</a>
@@ -28,9 +32,7 @@
   
 
   <div style="width: 100%; position: absolute;">
-    <div id="sidebar" class="sidebar" 
-    onmouseover="toggleSidebar()"
-    onmouseleave="exitSidebar()">
+    <div id="sidebar" class="sidebar">
 
         <a href="#about" class="nav-item">
           <img src="images/nav-id.png" class="nav-img">
@@ -116,6 +118,11 @@
       <div class="icon-text">Git</div>
     </div>
 
+    <div class="icon-container">
+      <img class="icon" src="images/icon-linux.png" >
+      <div class="icon-text">Linux</div>
+    </div>
+
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -143,10 +150,11 @@
         <img class="logo" src="images/logo-tdf.png" />
         <div class="content" >
           <div class="inner">
+
             <h4 class="itemTitle"> Assistant spécialisé</h4>
             <strong class="itemDate">2021</strong>
             <p class="itemText">
-              Accompagnement des équipes d'exploitation réseau
+              Accompagnement des équipes d'exploitation réseau chez TDF
             </p>
 
         </div>
